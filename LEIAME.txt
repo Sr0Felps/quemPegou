@@ -1,0 +1,19 @@
+﻿QUEM PEGOU? - Sistema de Coisas Emprestadas
+Disciplina: Ferramentas Visuais de Desenvolvimento de Software (ADS1251)
+
+COMO EXECUTAR
+1. Instale o MySQL Server e o MySQL Connector/NET.
+2. No MySQL Workbench, abra e execute o arquivo quemPegou\banco\script_banco.sql
+   (cria o banco "emprestimos" e a tabela "itens").
+3. Abra quemPegou\App.config e confira usuario e senha na connectionString
+   (nome: myDataBaseConnection).
+4. Abra quemPegou.slnx no Visual Studio e execute (F5).
+
+ESTRUTURA
+- Modelo\    Itens.cs                    classe que representa o item emprestado
+- Dados\     ItensDB.cs                  acesso ao MySQL (unico lugar com SQL)
+- Negocio\   EmprestimoService.cs        regras do sistema e validacoes
+             NegocioException.cs         erro de regra de negocio
+- Forms\     FormPrincipal               lista dos emprestimos
+             FormNovoEmprestimo          cadastro de novo emprestimo
+- banco\     script_banco.sql            script de criacao do banco

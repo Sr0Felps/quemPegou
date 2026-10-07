@@ -1,0 +1,8 @@
+# Pastas geradas pelo Visual Studio (não vão para o GitHub)
+.vs/
+bin/
+obj/
+
+# Arquivos pessoais do Visual Studio
+*.user
+*.suo

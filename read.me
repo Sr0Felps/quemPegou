@@ -1,0 +1,25 @@
+# Quem Pegou?
+
+Aplicação desktop (C# / Windows Forms) para controlar as coisas que você emprestou:
+para quem, quando e até quando. Os dados ficam salvos em um banco MySQL.
+
+## Funcionalidades
+- Lista de empréstimos, com os pendentes no topo
+- Itens com a data combinada vencida aparecem em vermelho
+- Cadastro de novo empréstimo (item, amigo, contato, data e devolução combinada opcional)
+- Registro de devolução, que salva a data
+
+## Como executar
+1. Instale o MySQL Server e o MySQL Connector/NET.
+2. No MySQL Workbench, execute `quemPegou/banco/script_banco.sql`.
+3. Em `quemPegou/App.config`, ajuste usuário e senha da `connectionString`.
+4. Abra `quemPegou.slnx` no Visual Studio e execute (F5).
+
+## Estrutura
+- `Modelo/` classe do item emprestado
+- `Dados/` acesso ao MySQL (único lugar com SQL)
+- `Negocio/` regras e validações do sistema
+- `Forms/` telas (lista e cadastro)
+- `banco/` script de criação do banco
+
+Projeto da disciplina ADS1251 - Ferramentas Visuais de Desenvolvimento de Software.
